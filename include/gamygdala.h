@@ -4,6 +4,9 @@
 #include <string>
 #include <memory>
 
+namespace GAMYGDALA
+{
+
 class Agent;
 class Goal;
 
@@ -25,5 +28,7 @@ private:
   std::vector<std::shared_ptr<Agent>> _agents;
   std::vector<std::shared_ptr<Goal>> _goals;
 };
+
+} //GAMYGDALA::
 
 #endif //#ifndef GAMYGDALA_H

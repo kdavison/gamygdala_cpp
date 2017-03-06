@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+# Contents of artifact
+artifact/
+
+# CMake Build Directory
+build

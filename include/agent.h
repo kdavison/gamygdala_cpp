@@ -3,6 +3,12 @@
 
 #include <string>
 #include <memory>
+#include <map>
+#include <vector>
+#include <unordered_map>
+
+namespace GAMYGDALA
+{
 
 class Goal;
 
@@ -12,12 +18,13 @@ public:
 /** Pleasure Arousal Dominance **/
   struct PAD
   {
+    
     float Pleasure;
     float Arousal;
     float Dominance;
   };
-
-  static const std::unordered_map<std::string, PAD> EMOTIONS =
+/*
+  static std::unordered_map<std::string, PAD> EMOTIONS =
   {
     {"distress", {-0.61,0.28,-0.36} },
     {"fear", {-0.64,0.6,-0.43} },
@@ -36,6 +43,7 @@ public:
     {"gratification", {0.69,0.57,0.63} },//triumphant
     {"remorse", {-0.57,0.28,-0.34} }//guilty
   };
+*/
 public:
   Agent(std::string name);
 private:
@@ -43,4 +51,5 @@ private:
   std::string _name;
 };
 
-#endif
+} //GAMYGDALA::
+#endif //#ifndef AGENT_H
