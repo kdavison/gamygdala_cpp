@@ -15,3 +15,8 @@ set(SOURCE
 
 add_library(gamygdala ${SOURCE})
 target_include_directories(gamygdala PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(
+  gamygdala #target
+  pthread
+  yaml-cpp
+)

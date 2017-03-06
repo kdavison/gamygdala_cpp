@@ -10,8 +10,9 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/artifact)
 
 option(GAMYGDALA_TEST "build tests" ON)
 
-if(GAMYGDALA_TEST)
 add_subdirectory(${CMAKE_SOURCE_DIR}/external)
-endif()
-
 add_subdirectory(${CMAKE_SOURCE_DIR}/source)
+
+if(GAMYGDALA_TEST)
+add_subdirectory(${CMAKE_SOURCE_DIR}/test)
+endif()
